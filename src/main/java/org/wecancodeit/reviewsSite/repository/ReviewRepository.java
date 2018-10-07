@@ -10,7 +10,11 @@ public class ReviewRepository {
 
 	public ReviewRepository() {
 		add(new Review(1L, "Coffee", "/images/coffee.jpg", "bevarage",
-				"The addictive standby. Will always be there for me and the standard that all other morning bevarages are measured against. 5 out of 5."));
+				"The addictive standby. Will always be there for me and the "
+						+ "standard that all other morning bevarages are measured against." + " 5 out of 5."));
+		add(new Review(2L, "Tea", "/images/tea.jpg", "beverage",
+				"Usually doesn't pack enough of a punch to do much of anything. "
+						+ "The taste is pretty good. 4 out of 5."));
 
 	}
 

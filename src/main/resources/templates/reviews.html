@@ -9,11 +9,14 @@
 		<nav>
 			<ul>
 				<li th:each= "review : ${reviews}">
-					<a th:href="|/reviews/${review.id}|" th:text="${review.title}">Review</a>
+					<a th:href="|/reviews/${review.id}|" th:text="${review.title}">Review</a> <img th:src="${review.imageLocation}" alt="${review.title}" style="width:10%;height:10%;">
 				</li>
 			</ul>
 		</nav>
 	</header>
-
+	<footer>
+		<small>&copy; Wayne Livingston 2018</small>
+	</footer>
 </body>
+
 </html>

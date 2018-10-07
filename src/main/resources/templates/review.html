@@ -9,15 +9,24 @@
 			Title
 		</h1>
 		<nav>
+			<li>
+				<a href="/reviews">My Morning Beverage</a>
+			</li>
 			<li th:each="review:${reviews}">
 				<a th:href="|/reviews/${review.id}|" th:text="${review.title}">Review</a>
 			</li>
 		</nav>
 	</header>
 	<main>
-		<img th:src=${review.imageLocation}>
-		
+		<img th:src=${review.imageLocation} alt="Don't recommend it in this form." style="float:right;width:25%; height: 25%">
+		<p th:text=${review.content}>
+			
+		</p>
 	
 	</main>
+	<footer>
+		<small>&copy; Wayne Livingston 2018</small>
+	</footer>
 </body>
+
 </html>

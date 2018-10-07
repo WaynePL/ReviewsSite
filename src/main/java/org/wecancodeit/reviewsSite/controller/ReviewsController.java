@@ -20,8 +20,14 @@ public class ReviewsController {
 
 	@GetMapping("/reviews/{id}")
 	public String getReview(@PathVariable(value = "id") Long id, Model model) {
-		System.out.println(reviewRepo.findOne(id));
+		model.addAttribute("reviews", reviewRepo.findAll());
 		model.addAttribute("review", reviewRepo.findOne(id));
 		return "review";
+	}
+
+	@GetMapping("/")
+	public String getDefault(Model model) {
+		model.addAttribute("reviews", reviewRepo.findAll());
+		return "/reviews";
 	}
 }
