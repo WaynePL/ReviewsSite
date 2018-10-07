@@ -1,4 +1,4 @@
-package org.wecancodeit.reviewsSite.reviewsSite;
+package org.wecancodeit.reviewsSite;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
