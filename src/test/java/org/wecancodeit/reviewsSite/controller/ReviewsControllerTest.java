@@ -21,12 +21,12 @@ public class ReviewsControllerTest {
 
 	@Test
 	public void shouldBeOkWhenGoingToReview() throws Exception {
-		mockMvc.perform(get("/review")).andExpect(status().isOk());
+		mockMvc.perform(get("/reviews/1")).andExpect(status().isOk());
 	}
 
 	@Test
 	public void shouldBeCalledReview() throws Exception {
-		mockMvc.perform(get("/review")).andExpect(view().name("review"));
+		mockMvc.perform(get("/reviews/1")).andExpect(view().name("review"));
 	}
 
 	@Test

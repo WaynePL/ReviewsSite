@@ -8,6 +8,7 @@
 		<h1 th:text=${review.title}>
 			Title
 		</h1>
+		<img th:src=${review.imageLocation} alt="Don't recommend it in this form." style="float:right;width:25%; height: 25%">
 		<nav>
 			<li>
 				<a href="/reviews">My Morning Beverage</a>
@@ -18,10 +19,10 @@
 		</nav>
 	</header>
 	<main>
-		<img th:src=${review.imageLocation} alt="Don't recommend it in this form." style="float:right;width:25%; height: 25%">
-		<p th:text=${review.content}>
+		
+		<h3 th:text=${review.content}>
 			
-		</p>
+		</h3>
 	
 	</main>
 	<footer>
